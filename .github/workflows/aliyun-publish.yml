@@ -46,8 +46,8 @@ jobs:
         with:
           context: .
           file: ./build/Dockerfile
-          # 多架构支持
-          platforms: linux/amd64,linux/arm64
+          # 多架构支持 可添加linux/arm64
+          platforms: linux/amd64
           # 关闭 provenance 验证信息 (对应 --provenance=false)
           provenance: false
           push: true
