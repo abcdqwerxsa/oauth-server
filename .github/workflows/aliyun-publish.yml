@@ -48,7 +48,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: Dockerfile
+          file: ./build/Dockerfile
           # 多架构支持
           platforms: linux/amd64,linux/arm64
           # 关闭 provenance 验证信息 (对应 --provenance=false)
